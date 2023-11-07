@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #f5ba23;
+    --color-red: #b10000;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #ffffff;
+    --color-black: #000;
+    --color-info-dark: #ffffff;
+    --color-dark: #000000;
+    --color-light: rgb(255, 252, 252);
+    --color-dark-variant: #a3bdcc;
+    --color-background: #ddd9d9;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0.015rem 0.1rem 0.1rem 0.01rem var(--color-danger);
+    --box-shadow-hover: 0.005rem 0.01rem 0.5rem 0.01rem var(--color-danger);
+    
+} 
+
+* {
+    box-sizing: border-box;
+  }
+
+ /* navbar container */
+ .navbar {
+    overflow: hidden;
+    background-color: var(--color-background);
+    height: 50px;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: var(--color-dark);
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  } 
+
+  .left-column {   
+    float: left;
+    width: 16%;
+    background-color: var(--color-success);
+  }
+
+  /* Right column */
+.right-column {
+    float: left;
+    width: 84%;
+    background-color: var(--color-red);
+    padding-left: 20px;
+  }
+
+   /* Responsive layout*/
+  @media screen and (max-width: 800px) {
+    .right-column {   
+      width: 100%;
+      padding: 0;
+    }
+    .left-column,.navbar{display: none;}
+  }
+  
+ 
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
